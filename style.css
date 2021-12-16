@@ -1,0 +1,159 @@
+.bg-img {
+    /* background-image: url(/images/bg-img.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.navbar .container-fluid {
+    padding: 10px 0px;
+}
+
+
+/* Navbar Brand Section */
+.navbar .container-fluid .navbar-brand {
+    margin-left: 5rem;
+}
+.navbar .container-fluid .navbar-brand .navbar-brand-logo  {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+.navbar .container-fluid .navbar-brand .navbar-brand-name {
+    color: white;
+}
+
+
+/* Navbar Tabs Section */
+.navbar .navbar-collapse {
+    margin-left: 10rem;
+}
+
+.navbar .navbar-collapse ul li .nav-link {
+    color: white;
+}
+
+.navbar .navbar-collapse ul li .nav-link:hover {
+    color: lightsalmon;
+}
+
+
+/* Search Button Section */
+.navbar .navbar-collapse .search-btn .btn {
+    margin-right: 5rem;
+    color: white;
+}
+
+
+/* Carousel Section */
+.slide .carousel-inner .carousel-item img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b1 {
+    color: green;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b2 {
+    color: red;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b3 {
+    color: yellow;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b4 {
+    color: lightskyblue;
+}
+
+
+
+/* Project Section */
+.project-background {
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.project-background .project-text {
+    /* margin-left: 30em; */
+    text-align: center;
+}
+
+.project-background .figure .figure1 {
+    float: right;
+    display: block;
+}
+
+
+/* Row Section */
+.project-background .row {
+    padding: 30px 0 0 3rem;
+    position: relative;
+}
+
+.project-background .row1 .column {
+    float: left;
+    padding-left: 50px;
+    width: 30%;
+}
+
+.project-background .row1 .column .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-background .row1 .column .middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    text-align: center;
+}
+
+.project-background .row1 .column .middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 45%;
+    text-align: center;
+}
+
+.project-background .row1 .column .middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 73%;
+    text-align: center;
+}
+
+.project-background .row1 .column:hover .image {
+    opacity: 0.3;
+}
+
+.project-background .row1 .column:hover .middle1, 
+.project-background .row1 .column:hover .middle2, 
+.project-background .row1 .column:hover .middle3 {
+    opacity: 1;
+}
+
+.project-background .row1 .column .preview-btn {
+    color: white;
+    background-color: green;
+    padding: 10px;
+    opacity: 0.8;
+}
