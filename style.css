@@ -195,6 +195,175 @@
     opacity: 0.8;
 }
 
+
+
+/* Contact Form */
+body {
+    background-image: url(/images/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.7); 
+    margin: 50px auto;
+    padding: 55px 30px;
+    color: white;
+    width: 60%;
+    max-width: 90%;
+    border-radius: 4px;
+}
+
+.contact-form .contact-title {
+    letter-spacing: 6px;
+    border-bottom: 2px solid;
+    display: block;
+}
+
+.contact-form .contact-text {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.contact-form .contact-textbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4%;
+    width: 40%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.contact-form .contact-text .contact-textbox input {
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 6%;
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    color: white;
+}
+
+.contact-form .contact-text .contact-textbox input::placeholder,
+.contact-form .contact-msgbox textarea::placeholder {
+    color: white;
+}
+
+.contact-form .contact-msgbox {
+    margin-bottom: 3%;
+}
+
+.contact-form .contact-msgbox textarea {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 12px 16px;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.contact-form .contact-text .contact-textbox input:focus,
+.contact-form .contact-msgbox textarea:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.contact-form .contact-text .contact-textbox input:focus::placeholder,
+.contact-form .contact-msgbox textarea:focus::placeholder {
+    color: black;
+}
+
+/* Contact - Button Box Section */
+.contact-form .contact-btnbox {
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid white;
+}
+
+.contact-form .contact-btnbox input {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px;
+}
+
+.contact-form .contact-btnbox input[type="submit"],
+.contact-form .contact-btnbox input[type="reset"] {
+    background: white;
+    color: black;
+}
+
+.contact-form .contact-btnbox input[type="submit"]:hover,
+.contact-form .contact-btnbox input[type="reset"]:hover {
+    background: black;
+    color: white;
+}
+
+.contact-form .contact-btnbox input[type="submit"]:active,
+.contact-form .contact-btnbox input[type="reset"]:active {
+    background: green;
+    color: white;
+}
+
+/* Coontact - Platform Section */
+.contact-form .contact-platforms {
+    border-bottom: 2px solid white;
+    padding-bottom: 1%;
+}
+
+.contact-form .contact-platforms .contact-platforms-handles a {
+    border: 2px solid white;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    color: white;
+    background: black;
+}
+
+.contact-form .contact-platforms .contact-platforms-phnno a {
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    color: white;
+    background: black;
+}
+
+.contact-form .contact-platforms a:hover {
+    background: white;
+    color: black;
+}
+
+.contact-form .contact-platforms a:active {
+    background: green;
+    color: black;
+}
+
+
 /* Responsive Media */
 @media screen and (max-width: 1024px) {
     .slide .carousel-inner .carousel-item img {
@@ -212,22 +381,48 @@
         width: 100vw;
         height: 50vh;
     }
-/*     
-    .project-background .project-text h4 {
-        font-size: 15px;
-    } */
-    
-    /* .project-background .row .column .figure-caption p{
-        visibility: collapse;
-    } */
 
     .project-background .row {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-form .contact-text {
+        flex-direction: column;
+    }
+
+    .contact-form .contact-text .contact-textbox {
+        width: 100%;
+    }
     
 }
-@media screen and  (max-width: 500px) {
+@media screen and  (max-width: 400px) {
     .project-background .row {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .contact-form .contact-text {
+        flex-direction: column;
+    }
+
+    .contact-form .contact-text .contact-textbox {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .contact-form .contact-msgbox {
+        padding-top: 20px;
+    }
+
+    .contact-form .contact-btnbox {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form .contact-btnbox input {
+        padding: 0 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
 }
