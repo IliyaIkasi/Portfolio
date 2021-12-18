@@ -374,6 +374,20 @@ body {
     .project-background .row {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .contact-form {
+        background: rgba(0, 0, 0, 0.7); 
+        margin: 50px auto;
+        padding: 55px 30px;
+        color: white;
+        width: 70%;
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    .contact-form .contact-text .contact-textbox {
+        /* padding-top: 20px; */
+    }
 }
 @media screen and (max-width: 800px) {
     /* Carousel Section */
@@ -385,12 +399,39 @@ body {
     .project-background .row {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .contact-form {
+        background: rgba(0, 0, 0, 0.7); 
+        margin: 50px auto;
+        padding: 55px 30px;
+        color: white;
+        width: 80%;
+        max-width: 90%;
+        border-radius: 4px;
+    }
 
     .contact-form .contact-text {
         flex-direction: column;
     }
 
     .contact-form .contact-text .contact-textbox {
+        /* padding-top: 20px; */
+        width: 100%;
+    }
+
+    .contact-form .contact-msgbox {
+        padding-top: 20px;
+    }
+
+    .contact-form .contact-btnbox {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form .contact-btnbox input {
+        padding: 0 10px;
+        margin-bottom: 10px;
         width: 100%;
     }
     
@@ -399,13 +440,23 @@ body {
     .project-background .row {
         grid-template-columns: repeat(1, 1fr);
     }
+    
+    .contact-form {
+        background: rgba(0, 0, 0, 0.7); 
+        margin: 50px auto;
+        padding: 55px 30px;
+        color: white;
+        width: 90%;
+        max-width: 90%;
+        border-radius: 4px;
+    }
 
     .contact-form .contact-text {
         flex-direction: column;
     }
 
     .contact-form .contact-text .contact-textbox {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         width: 100%;
     }
 
