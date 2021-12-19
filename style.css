@@ -15,7 +15,7 @@
 
 /* Navbar Brand Section */
 .navbar .container-fluid .navbar-brand {
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 .navbar .container-fluid .navbar-brand .navbar-brand-logo  {
     width: 50px;
@@ -30,8 +30,8 @@
 /* Navbar Tabs Section */
 .navbar .container-fluid .collapsed,
 .navbar .container-fluid .navbar-toggler,
-.navbar .container-fluid .navbar-toggler .navbar-toggler-icon::before {
-    /* padding-right: 30px; */
+.navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    background-color: white;
     color: white!important;
 }
 
@@ -62,8 +62,19 @@
 }
 
 .slide .carousel-inner .carousel-item .carousel-caption {
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .n1 {
+    color: #408ec6;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .n2 {
+    color: #7a2048;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .n3 {
+    color: #ef9d1f;
 }
 
 .slide .carousel-inner .carousel-item .carousel-caption .b1 {
@@ -71,24 +82,35 @@
 }
 
 .slide .carousel-inner .carousel-item .carousel-caption .b2 {
-    color: red;
+    color: blue;
 }
 
 .slide .carousel-inner .carousel-item .carousel-caption .b3 {
-    color: yellow;
+    color: violet;
 }
 
 .slide .carousel-inner .carousel-item .carousel-caption .b4 {
-    color: lightskyblue;
+    color: red;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b5 {
+    color: orange;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption .b6 {
+    color: yellow;
 }
 
 
 
 /* Project Section */
 .project-background {
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
     color: white;
-    background-color: #2b2b2b;
+    background-image: url(/images/project-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .project-background .project-text {
@@ -100,7 +122,7 @@
 .project-background .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 30px 20px;
+    padding: 30px 20px 0 20px;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
 }
@@ -143,7 +165,7 @@
     transition: .5s ease;
     opacity: 0;
     position: relative;
-    bottom: 40%;
+    bottom: 60%;
     left: 0%;
     text-align: center;
 }
@@ -198,7 +220,8 @@
 
 
 /* Contact Form */
-body {
+.contact-section {
+    padding: 30px 0 30px 0;
     background-image: url(/images/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,7 +230,7 @@ body {
 
 .contact-form {
     background: rgba(0, 0, 0, 0.7); 
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 55px 30px;
     color: white;
     width: 60%;
@@ -302,20 +325,17 @@ body {
     padding: 0 20px;
 }
 
-.contact-form .contact-btnbox input[type="submit"],
-.contact-form .contact-btnbox input[type="reset"] {
+.contact-form .contact-btnbox input {
     background: white;
     color: black;
 }
 
-.contact-form .contact-btnbox input[type="submit"]:hover,
-.contact-form .contact-btnbox input[type="reset"]:hover {
+.contact-form .contact-btnbox input:hover {
     background: black;
     color: white;
 }
 
-.contact-form .contact-btnbox input[type="submit"]:active,
-.contact-form .contact-btnbox input[type="reset"]:active {
+.contact-form .contact-btnbox input:active {
     background: green;
     color: white;
 }
@@ -326,36 +346,38 @@ body {
     padding-bottom: 1%;
 }
 
+.contact-form .contact-platforms .contact-platforms-handles {
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    line-height: 50%;
+    width: 200px;
+    padding: 5px 15px;
+}
+
 .contact-form .contact-platforms .contact-platforms-handles a {
-    border: 2px solid white;
-    border-radius: 50%;
-    line-height: 40px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 10px;
     color: white;
-    background: black;
 }
 
-.contact-form .contact-platforms .contact-platforms-phnno a {
-    margin-top: 5px;
-    border: 2px solid white;
-    border-radius: 50%;
-    line-height: 40px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 10px;
-    color: white;
-    background: black;
-}
-
-.contact-form .contact-platforms a:hover {
+.contact-form .contact-platforms .contact-platforms-handles:hover {
     background: white;
     color: black;
+}
+
+.contact-form .contact-platforms .contact-platforms-handles a:hover {
+    color: black;
+}
+
+.contact-form .contact-platforms .contact-platforms-phnno {
+    margin-top: 5px;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    color: white;
+    background: black;
 }
 
 .contact-form .contact-platforms a:active {
@@ -366,9 +388,17 @@ body {
 
 /* Responsive Media */
 @media screen and (max-width: 1024px) {
+    .navbar .container-fluid {
+        padding: 10px 50px 10px 20px;
+    }
+
+    .navbar .container-fluid .navbar-brand {
+        margin-left: 0rem;
+    }
+    
     .slide .carousel-inner .carousel-item img {
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
     }
     
     .project-background .row {
@@ -384,16 +414,22 @@ body {
         max-width: 90%;
         border-radius: 5px;
     }
-
-    .contact-form .contact-text .contact-textbox {
-        /* padding-top: 20px; */
-    }
 }
 @media screen and (max-width: 800px) {
+    .navbar .container-fluid {
+        padding: 10px 20px;
+    }
+
+    .navbar .container-fluid .navbar-brand {
+        margin-left: 0rem;
+    }
+
+
+
     /* Carousel Section */
     .slide .carousel-inner .carousel-item img {
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
     }
 
     .project-background .row {
@@ -415,7 +451,6 @@ body {
     }
 
     .contact-form .contact-text .contact-textbox {
-        /* padding-top: 20px; */
         width: 100%;
     }
 
@@ -437,6 +472,14 @@ body {
     
 }
 @media screen and  (max-width: 400px) {
+    .navbar .container-fluid {
+        padding: 10px 20px;
+    }
+
+    .navbar .container-fluid .navbar-brand {
+        margin-left: 0rem;
+    }
+
     .project-background .row {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -456,7 +499,6 @@ body {
     }
 
     .contact-form .contact-text .contact-textbox {
-        /* padding-top: 20px; */
         width: 100%;
     }
 
